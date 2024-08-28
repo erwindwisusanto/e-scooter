@@ -1,12 +1,12 @@
 <x-master-layout>
     <section class="jarallax">
-        <img src="images/background/gradient-1.webp" class="jarallax-img" alt="" />
+        <img src="{{ asset('images/background/gradient-1.webp') }}" class="jarallax-img" alt="" />
         <div class="container">
             <div class="row g-4 gx-5 align-items-center">
                 <div class="spacer-single d-lg-none d-sm-block"></div>
                 <div class="col-lg-6">
                     <div class="relative">
-                        <img src="images/misc/4.webp" class="img-fluid relative z-index-1 rounded-20px wow fadeInUp"
+                        <img src="{{ asset('images/misc/4.webp') }}" class="img-fluid relative z-index-1 rounded-20px wow fadeInUp"
                             alt="" />
                     </div>
                 </div>
@@ -54,9 +54,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter01.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter01.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20" alt="" />
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20" alt="" />
                             </a>
 
                             <div class="row mt-3 g-2 relative z-1000"
@@ -159,9 +159,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter02.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter02.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20" alt="" />
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20" alt="" />
                             </a>
 
                             <div class="row mt-3 g-2 relative z-1000"
@@ -263,9 +263,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter03.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter03.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20"
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20"
                                     alt="" />
                             </a>
 
@@ -367,9 +367,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter04.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter04.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20"
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20"
                                     alt="" />
                             </a>
 
@@ -471,9 +471,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter05.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter05.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20"
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20"
                                     alt="" />
                             </a>
 
@@ -576,9 +576,9 @@
                     background-repeat: no-repeat;
                   ">
                             <a href="##">
-                                <img src="images/misc/escooter06.png" class="w-100 relative z-1000 hover-scale-1-2"
+                                <img src="{{ asset('images/misc/escooter06.png') }}" class="w-100 relative z-1000 hover-scale-1-2"
                                     alt="" />
-                                <img src="images/misc/10.webp" class="absolute start-10 top-10 w-20"
+                                <img src="{{ asset('images/misc/10.webp') }}" class="absolute start-10 top-10 w-20"
                                     alt="" />
                             </a>
 
@@ -677,7 +677,7 @@
     </section>
 
     <section class="jarallax text-light pt30 pb30">
-        <img src="images/background/gradient-3.webp" class="jarallax-img" alt="" />
+        <img src="{{ asset('images/background/gradient-3.webp') }}" class="jarallax-img" alt="" />
         <div class="wow fadeInRight d-flex">
             <div class="de-marquee-list wow">
                 <div class="d-item">
@@ -798,7 +798,7 @@
     </section>
 
     <section class="relative overflow-hidden mh-500px jarallax">
-        <img src="images/background/gradient-1.webp" class="jarallax-img" alt="" />
+        <img src="{{ asset('images/background/gradient-1.webp') }}" class="jarallax-img" alt="" />
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">
@@ -847,7 +847,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/1.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/1.webp') }}" />
                                     <div>Michael S.</div>
                                 </div>
                                 <p>
@@ -872,7 +872,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/2.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/2.webp') }}" />
                                     <div>Robert L.</div>
                                 </div>
                                 <p>
@@ -897,7 +897,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/3.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/3.webp') }}" />
                                     <div>Jake M.</div>
                                 </div>
                                 <p>
@@ -922,7 +922,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/4.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/4.webp') }}" />
                                     <div>Alex P.</div>
                                 </div>
                                 <p>
@@ -947,7 +947,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/5.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/5.webp') }}" />
                                     <div>Carlos R.</div>
                                 </div>
                                 <p>
@@ -972,7 +972,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/6.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/6.webp') }}" />
                                     <div>Edward B.</div>
                                 </div>
                                 <p>
@@ -997,7 +997,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/7.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/7.webp') }}" />
                                     <div>Daniel H.</div>
                                 </div>
                                 <p>
@@ -1022,7 +1022,7 @@
                                     </span>
                                 </div>
                                 <div class="de_testi_by">
-                                    <img class="circle" alt="" src="images/testimonial/8.webp" />
+                                    <img class="circle" alt="" src="{{ asset('images/testimonial/8.webp') }}" />
                                     <div>Bryan G.</div>
                                 </div>
                                 <p>
