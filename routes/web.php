@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $cacheKey = 'home-page';
+
+    if (Cache::has($cacheKey)) {
+        return Cache::get($cacheKey);
+    }
+
+    $response = view('index');
+    Cache::put($cacheKey, $response, 60);
+
+    return $response;
 });
