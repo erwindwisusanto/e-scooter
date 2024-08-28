@@ -21,8 +21,9 @@ Route::get('/', function () {
         return Cache::get($cacheKey);
     }
 
-    $response = view('index');
+    $response = view('index')->render();
+
     Cache::put($cacheKey, $response, 60);
 
-    return $response;
+    return response($response);
 });
