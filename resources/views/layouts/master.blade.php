@@ -67,9 +67,7 @@
         <x-footer />
 
         <div id="buy-now" class="show-on-scroll">
-            <a class="btn-buy"
-                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                target="_blank" data-bs-toggle="tooltip" data-bs-placement="left"
+            <a class="btn-buy" onclick="floatingButton()" data-bs-toggle="tooltip" data-bs-placement="left"
                 data-bs-title="Need help? Chat with us" data-bs-custom-class="custom-tooltip">
                 <i class="icofont-brand-whatsapp"></i>
             </a>
@@ -84,11 +82,20 @@
     <script src="{{ asset('js/custom-swiper-1.js') }}"></script>
 
     <script>
+        "use strict";
+
+        const phoneNumber = '628121333064';
+
         const tooltipTriggerList = document.querySelectorAll(
             '[data-bs-toggle="tooltip"]'
         );
         const tooltipList = [...tooltipTriggerList].map(
             (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
         );
+
+        const floatingButton = () => {
+            const textMessage = 'Hello, E-Scooter!🛵 I’ve been hearing amazing things about your motorcycle rentals in Bali. Could you tell me more about what you offer? Appreciate it! ✨🌴';
+            window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(phoneNumber)}&text=${encodeURIComponent(textMessage)}`, '_blank');
+        }
     </script>
 </body>

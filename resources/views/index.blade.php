@@ -24,9 +24,7 @@
                             </p>
                         </div>
                         <div class="spacer-10"></div>
-                        <a class="btn-main wow fadeIn" data-wow-delay=".8s"
-                            href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                            target="_blank">
+                        <a class="btn-main wow fadeIn" data-wow-delay=".8s" style="cursor: pointer;" onclick="buttonAvailability()">
                             Ask Availability
                         </a>
                     </div>
@@ -138,9 +136,7 @@
                             </p>
                             <p class="fs-24 mb-3 fw-600 text-dark">Rp150.000/Day</p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('Uwinfly T3S Pro')">
                                 Book Now
                             </a>
                         </div>
@@ -245,9 +241,7 @@
                             </p>
                             <p class="fs-24 mb-3 fw-600 text-dark">Rp150.000/Day</p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('GT META')">
                                 Book Now
                             </a>
                         </div>
@@ -351,9 +345,7 @@
                                 Rp170.000/Day
                             </p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('Yadea E8S Pro')">
                                 Book Now
                             </a>
                         </div>
@@ -457,9 +449,7 @@
                                 Rp270.000/Day
                             </p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('POLYTRON Fox S')">
                                 Book Now
                             </a>
                         </div>
@@ -563,9 +553,7 @@
                                 Rp270.000/Day
                             </p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('ALVA Cervo 2')">
                                 Book Now
                             </a>
                         </div>
@@ -671,9 +659,7 @@
                             </p>
                             <p class="fs-24 mb-3 fw-600 text-dark">Rp250.000/Day</p>
 
-                            <a class="btn-main"
-                                href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
-                                target="_blank">
+                            <a class="btn-main" style="cursor: pointer;" onclick="booking('ALVA One')">
                                 Book Now
                             </a>
                         </div>
@@ -1052,3 +1038,18 @@
         </div>
     </section>
 </x-master-layout>
+<script>
+    "use strict";
+
+    const WA_NUMBER = '628121333064';
+
+    const buttonAvailability = () => {
+        const textMessageAvailability = `Hi, E-Scooter! 🛵 Word on the street is that your motorcycle rentals are top-notch in Bali. Can you fill me in on what’s available? Thanks! 🌞✨`;
+        window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(WA_NUMBER)}&text=${encodeURIComponent(textMessageAvailability)}`, '_blank');
+    }
+
+    const booking = (eScooterName) => {
+        const textMessage = `Hello e-scooter!🛵 I would like to order ${eScooterName}`;
+        window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(WA_NUMBER)}&text=${encodeURIComponent(textMessage)}`, '_blank');
+    }
+</script>
