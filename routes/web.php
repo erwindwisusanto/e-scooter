@@ -15,15 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $cacheKey = 'home-page';
-
-    if (Cache::has($cacheKey)) {
-        return Cache::get($cacheKey);
-    }
-
-    $response = view('index')->render();
-
-    Cache::put($cacheKey, $response, 60);
-
-    return response($response);
+    return view('index');
 });
