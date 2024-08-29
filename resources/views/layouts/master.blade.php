@@ -60,7 +60,7 @@
         </div>
         <div class="scrollbar-v show-on-scroll"></div>
 
-        {{-- <div id="de-loader"></div> --}}
+        <div id="de-loader"></div>
 
         <x-header />
 
