@@ -82,6 +82,29 @@
     </div>
 
     <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/Isotope.js') }}"></script>
+    <script src="{{ asset('js/mdb5.js') }}"></script>
+    <script src="{{ asset('js/wow.js') }}"></script>
+    <script src="{{ asset('js/skroller.js') }}"></script>
+    <script src="{{ asset('js/easing.js') }}"></script>
+    <script src="{{ asset('js/owl-carousel.js') }}"></script>
+    <script src="{{ asset('js/magnific-popup.js') }}"></script>
+    <script src="{{ asset('js/inquer.js') }}"></script>
+    <script src="{{ asset('js/jaralax.js') }}"></script>
+    <script src="{{ asset('js/countto.js') }}"></script>
+    <script src="{{ asset('js/countdown.js') }}"></script>
+    <script src="{{ asset('js/jqueryzepto.js') }}"></script>
+    <script src="{{ asset('js/jquerycookie.js') }}"></script>
+    <script src="{{ asset('js/smoothscroll.js') }}"></script>
+    <script src="{{ asset('js/jquerycircleprogress.js') }}"></script>
+    <script src="{{ asset('js/videoworker.js') }}"></script>
+    <script src="{{ asset('js/elementjaralax.js') }}"></script>
+    <script src="{{ asset('js/typed.js') }}"></script>
+    <script src="{{ asset('js/cookit.js') }}"></script>
+    <script src="{{ asset('js/marque.js') }}"></script>
+    <script src="{{ asset('js/select2.js') }}"></script>
+
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/swiper.js') }}"></script>
     <script src="{{ asset('js/custom-marquee.js') }}"></script>
