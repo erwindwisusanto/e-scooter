@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('/save-visit-count', [MainController::class, 'visitCounter'])->name('visitCounter')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
