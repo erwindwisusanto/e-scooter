@@ -15,7 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return Cache::remember('index', 60, function () {
-        return view('index')->render();
-    });
+    return view('index');
 });
