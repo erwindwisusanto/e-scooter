@@ -81,7 +81,7 @@
 
     </div>
 
-    <script src="{{ asset('js/plugins.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/Isotope.js') }}"></script>
     <script src="{{ asset('js/mdb5.js') }}"></script>
@@ -126,5 +126,28 @@
             const textMessage = 'Hello, E-Scooter!🛵 I’ve been hearing amazing things about your motorcycle rentals in Bali. Could you tell me more about what you offer? Appreciate it! ✨🌴';
             window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(phoneNumber)}&text=${encodeURIComponent(textMessage)}`, '_blank');
         }
+
+        const visitCounter = () => {
+            $.ajax({
+                url: '{{ route("visitCounter") }}',
+                type: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}'
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(response) {
+                    console.log('Visit count saved successfully');
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error saving visit count:', error);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            visitCounter();
+        });
     </script>
 </body>
