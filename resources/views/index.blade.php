@@ -1044,11 +1044,13 @@
     const WA_NUMBER = '628121333064';
 
     const buttonAvailability = () => {
+        handleVisit('Ask Availability');
         const textMessageAvailability = `Hi, E-Scooter! 🛵 Word on the street is that your motorcycle rentals are top-notch in Bali. Can you fill me in on what’s available? Thanks! 🌞✨`;
         window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(WA_NUMBER)}&text=${encodeURIComponent(textMessageAvailability)}`, '_blank');
     }
 
     const booking = (eScooterName) => {
+        handleVisit('Booking', eScooterName);
         const textMessage = `Hello e-scooter!🛵 I would like to order ${eScooterName}`;
         window.open(`https://api.whatsapp.com/send/?phone=${encodeURIComponent(WA_NUMBER)}&text=${encodeURIComponent(textMessage)}`, '_blank');
     }

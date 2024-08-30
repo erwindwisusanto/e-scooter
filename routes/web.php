@@ -20,4 +20,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/save-visit-count', [MainController::class, 'visitCounter'])->name('visitCounter')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
+Route::post('/save-visit-count', [MainController::class, 'handleVisit'])->name('visitCounter')->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
