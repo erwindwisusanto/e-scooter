@@ -27,7 +27,7 @@
                     </div>
                     <div class="de-flex-col">
                         <div class="menu_side_area">
-                            <a onclick="bookRent()" href="https://api.whatsapp.com/send/?phone=628121333064&text&type=phone_number&app_absent=0"
+                            <a onclick="bookRent()" href="https://api.whatsapp.com/send/?phone=6287787386635&text&type=phone_number&app_absent=0"
                                 class="btn-main bg-dark" target="_blank">
                                 Book a Rent
                             </a>

@@ -123,7 +123,7 @@
     <script>
         "use strict";
 
-        const phoneNumber = '628121333064';
+        const phoneNumber = '6287787386635';
 
         const tooltipTriggerList = document.querySelectorAll(
             '[data-bs-toggle="tooltip"]'
@@ -169,7 +169,7 @@
 
         const bookRent = () => {
             handleVisit('Book Rent');
-            window.open(`https://api.whatsapp.com/send?phone=628121333064&text=Hey%20e-Scooter!%20%F0%9F%8C%9E%20I%E2%80%99m%20interested%20in%20renting%20scooters.%20Would%20love%20to%20know%20about%20prices%2C%20rentals%2C%20and%20delivery.%20Cheers!%20%F0%9F%9A%B2`, '_blank');
+            window.open(`https://api.whatsapp.com/send?phone=6287787386635&text=Hey%20e-Scooter!%20%F0%9F%8C%9E%20I%E2%80%99m%20interested%20in%20renting%20scooters.%20Would%20love%20to%20know%20about%20prices%2C%20rentals%2C%20and%20delivery.%20Cheers!%20%F0%9F%9A%B2`, '_blank');
         }
 
         const visitCounter = () => {
