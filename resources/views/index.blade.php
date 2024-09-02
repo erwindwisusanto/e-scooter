@@ -1041,7 +1041,7 @@
 <script>
     "use strict";
 
-    const WA_NUMBER = '628121333064';
+    const WA_NUMBER = '6287787386635';
 
     const buttonAvailability = () => {
         handleVisit('Ask Availability');
