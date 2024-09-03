@@ -719,8 +719,8 @@
                 ">
                         How
                     </div>
-                    <h2 class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp">
-                        How to Rent a Motorcycle
+                    <h2 class="wow fadeInUp animated" swtyle="visibility: visible; animation-name: fadeInUp">
+                        How to Rent a Motorcycle <br/> <span style="font-size: 33px;">24 Hour Assistance/Support</span>
                     </h2>
                 </div>
                 <div class="col-lg-3 wow fadeInRight animated" data-wow-delay=".2s"
