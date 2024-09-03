@@ -40,7 +40,7 @@
                         <i class="icofont-envelope me-2 id-color"></i>
                         Make a Phone Call
                     </div>
-                    +62 8121333064
+                    +62 87787386635
                 </div>
             </div>
         </div>
